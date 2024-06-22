@@ -12,7 +12,9 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
   const toRotate = [ "A Full Stack Developer", "A Frontend Developer" , "A Backend Developer"];
+  const period = 100;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -33,7 +35,18 @@ export const Banner = () => {
       setDelta(prevDelta => prevDelta / 10);
     }
 
-    
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex(prevIndex => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(220);  // CONTROL SPEED THE MORE IT IS THE SLOWER THE ANIMATION
+    } else {
+      setIndex(prevIndex => prevIndex + 1);
+    }
   }
 
   return (
