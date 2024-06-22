@@ -1,5 +1,4 @@
-import { Container, Row, Col, Tab, Nav, Carousel } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -8,8 +7,6 @@ import TrackVisibility from "react-on-screen";
 
 
 
-import github from "../assets/img/icons8-github.svg";
-import web from "../assets/img/web.png";
 
 // slick css
 import "slick-carousel/slick/slick.css";
@@ -19,8 +16,6 @@ import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
 import { ExternalLink } from "react-external-link";
 
-import { BsGithub } from "react-icons/bs";
-import { BsGlobe } from "react-icons/bs";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import "../../node_modules/react-tooltip/dist/react-tooltip.css";
 import marichihome from "../assets/img/marichicover.png";
@@ -38,13 +33,7 @@ import amajiproj from "../assets/img/amajiproj.png";
 import amajicont from "../assets/img/amajicont.png";
 
 export const Projects = () => {
-  const projects1 = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-     
-    },
-  ];
+  
   var settings = {
     dots: true,
     infinite: true,
@@ -109,18 +98,22 @@ export const Projects = () => {
                               <img
                                 src={marichihome}
                                 className=" rounded-xl mb-8"
+                                alt="home"
                               />
                               <img
                                 src={marichiabout}
                                 className=" rounded-xl mb-8"
+                                alt="about"
                               />
                               <img
                                 src={marichistrat}
                                 className=" rounded-xl mb-8"
+                                alt="strategy"
                               />
                               <img
                                 src={marichicarrer}
                                 className=" rounded-xl mb-8"
+                                alt="carrer"
                               />
                             </Slider>
 
@@ -160,11 +153,11 @@ export const Projects = () => {
                         <Row>
                           <div>
                             <Slider {...settings}>
-                              <img src={zipkarthome} className=" rounded-xl mb-8" />
-                              <img src={zipkartinventory} className=" rounded-xl mb-8" />
-                              <img src={zipkartsearch} className=" rounded-xl mb-8" />
-                              <img src={zipkartproductmanage} className=" rounded-xl mb-8" />
-                              <img src={zipkartdashboard} className=" rounded-xl mb-8" />
+                              <img src={zipkarthome} className=" rounded-xl mb-8" alt="home"/>
+                              <img src={zipkartinventory} className=" rounded-xl mb-8" alt="inventory"/>
+                              <img src={zipkartsearch} className=" rounded-xl mb-8" alt="search"/>
+                              <img src={zipkartproductmanage} className=" rounded-xl mb-8" alt="manage"/>
+                              <img src={zipkartdashboard} className=" rounded-xl mb-8" alt="dashboard"/>
                             </Slider>
 
                             <div className="flex justify-center ccc">
@@ -210,18 +203,22 @@ export const Projects = () => {
                               <img
                                 src={amajihome}
                                 className=" rounded-xl mb-8"
+                                alt="home"
                               />
                               <img
                                 src={amajiabout}
                                 className=" rounded-xl mb-8"
+                                alt="about"
                               />
                               <img
                                 src={amajiproj}
                                 className=" rounded-xl mb-8"
+                                alt="projects"
                               />
                               <img
                                 src={amajicont}
                                 className=" rounded-xl mb-8"
+                                alt="contact"
                               />
                             </Slider>
 

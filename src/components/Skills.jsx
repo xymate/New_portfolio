@@ -1,15 +1,12 @@
 import css from "../assets/img/css-3.png"
 import html from "../assets/img/html.png"
 import js from "../assets/img/js.png"
-import nextJs from "../assets/img/nextjsimg.png"
 import react from "../assets/img/react-logo.png"
 import typeScript from "../assets/img/ts.png"
-import github from "../assets/img/github-logo.png"
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+
 import colorSharp from "../assets/img/color-sharp.png"
 import mongo from "../assets/img/mongo.png"
 import node from "../assets/img/node.png"

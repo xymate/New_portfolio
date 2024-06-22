@@ -3,8 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { useForm, ValidationError } from '@formspree/react';
-import { useEffect } from "react";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -15,10 +13,8 @@ export const Contact = () => {
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
   const [loading, setLoading] = useState(false);
 
-  const [state, handleSubmit] = useForm("<your formspree id>");
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -28,7 +24,7 @@ export const Contact = () => {
   }
 
   const loadingHandler = () => {
-    if (formDetails.firstName != "" && formDetails.email != "") {
+    if (formDetails.firstName !== "" && formDetails.email !== "") {
       setLoading(true);
     }
   }

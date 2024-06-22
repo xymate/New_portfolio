@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
 import Linkedin from '../assets/img/nav-icon1.svg';
-import twitter from "../assets/img/icons8-twitter.svg"
 import github from "../assets/img/icons8-github.svg"
-import GovindLogo from "../assets/img/logoo.gif"
 import "../App.css"
 
 import { HashLink } from 'react-router-hash-link';
@@ -12,11 +9,7 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 
-import { Link } from "react-router-dom";
-import { FaTwitter } from "react-icons/fa"
-import { AiOutlineGithub } from "react-icons/ai"
 import { ExternalLink } from 'react-external-link';
-import { size } from "lodash";
 
 
 export const NavBar = () => {
@@ -62,8 +55,8 @@ export const NavBar = () => {
             <span className="navbar-text">
 
               <div className="social-icon">
-                <ExternalLink href="https://www.linkedin.com/in/yash-chauhan-24feb03/"> <img src={Linkedin} alt="" /> </ExternalLink>
-                <ExternalLink href="https://github.com/xymate">  <img src={github} /> </ExternalLink>
+                <ExternalLink href="https://www.linkedin.com/in/yash-chauhan-24feb03/"> <img src={Linkedin} alt="an image" /> </ExternalLink>
+                <ExternalLink href="https://github.com/xymate">  <img src={github} alt="an image" /> </ExternalLink>
               </div>
 
               <HashLink to='#connect'>
