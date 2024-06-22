@@ -72,7 +72,7 @@ export const Banner = () => {
                 </div>}
             </TrackVisibility>
           </Col>
-          <a href="https://drive.google.com/file/d/1xdWwFgsciNJ7ahhYJC3KGhrUR-KQBAXF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a>
+          <a href="https://drive.google.com/file/d/1iKxRz4xrG_W6y3mUbcxfnLp7tzBUX69D/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Download CV</a>
         </Row>
       </Container>
     </section>
