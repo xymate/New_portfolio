@@ -1,0 +1,17 @@
+.banner a{
+    color: var(--white);
+    font-size: 1.5rem;
+    width: 16rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    border: 0.15rem solid rgb(128, 54, 247);
+    text-decoration: none;
+    list-style: none;
+}
+.banner a:hover{
+    color: black;
+    background: rgb(128, 54, 247);
+    font-weight: bold;
+}
